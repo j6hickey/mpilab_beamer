@@ -1,0 +1,69 @@
+%\pdfminorversion=4	
+%\pdfobjcompresslevel=0
+
+\documentclass[11pt,onlymath,english]{beamer}
+
+\usepackage{amsmath}
+\usepackage{mathcomp}
+\usepackage{textcomp}
+\usepackage{wasysym, marvosym}
+
+\usepackage{animate}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage[compatibility=false]{caption}
+\usepackage{listings}
+\usepackage{media9}
+\usepackage{ragged2e}
+\usepackage{textpos}
+\usepackage[percent]{overpic}
+\usepackage{graphicx}
+
+% Table option
+\newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
+
+\makeatletter
+
+% Define the Waterloo theme here
+\usetheme{Waterloo}
+
+\usepackage{babel}
+
+\graphicspath{{../figs/}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%   DOCUMENT BEGINS
+\begin{document}
+
+
+% TITLE PAGE
+\title[\emph{Predictive Modelling of Multi-Physics Interaction }]
+    {\vspace*{1.1cm}\\Predictive Modelling of Multi-Physics Interaction \vspace*{0.1cm}}
+\date{August 9, 2018}
+\author{author}
+\institute[University of Waterloo]
+    {Multi-Physics Interaction Laboratory \\ Mechanical and Mechatronics Engineering\\University of Waterloo}
+{
+\setbeamertemplate{footline}{} 
+
+
+% Organize the elements of the title page
+\input{./sections/title_page}
+\addtocounter{framenumber}{-1}  
+
+
+% Input each individual section here (add sections as necessary)
+\input{./sections/introduction}
+
+
+
+%   BIBLIOGRAPHY
+\bibliography{./sections/references}
+\bibliographystyle{aiaa}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%   DOCUMENT ENDS
+\end{document}

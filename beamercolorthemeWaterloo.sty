@@ -1,0 +1,47 @@
+\mode<presentation>
+
+\definecolor{black}{RGB}{35, 55, 59}
+\definecolor{white}{RGB}{255,255,255}
+\definecolor{gray}{RGB}{223,223,223}  %  e.g. for block background
+\definecolor{waterloopurple}{RGB}{129, 0, 180}  %  e.g. title in headline, separation lines
+%% old gold: CFB53B E0D5C5
+\definecolor{purduegold}{RGB}{87,5,139}  %  e.g. for alert
+\definecolor{offwhite}{RGB}{250,255,240}
+
+\setbeamertemplate{itemize items}[triangle]
+
+\setbeamercolor{frametitle}{fg=white,bg=black}
+\setbeamercolor{structure}{fg=purduegold}
+% Need to figure out which part of this structure regulates the color of the ticks
+% \setbeamercolor{structure}{fg=white}
+
+\setbeamercolor{block title}{use=structure,fg=black}
+\setbeamercolor{block title alerted}{use=structure,fg=purduegold,bg=black}
+\setbeamercolor{block title example}{use=structure,fg=purduegold,bg=black}
+
+\setbeamercolor{block body}{parent=normal text,use=block title}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=gray}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=gray}
+
+\setbeamercolor*{palette primary}{use=structure,fg=black,bg=waterloopurple}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=black!50!waterloopurple}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=black,bg=gray}
+
+\setbeamercolor*{sidebar}{bg=white,fg=waterloopurple}
+
+\setbeamercolor*{palette sidebar primary}{fg=white,bg=white}
+\setbeamercolor*{palette sidebar secondary}{fg=white,bg=white}
+\setbeamercolor*{palette sidebar tertiary}{fg=white,bg=white}
+\setbeamercolor*{palette sidebar quaternary}{fg=white,bg=white}
+
+\setbeamercolor*{titlelike}{bg=black,fg=waterloopurple}
+\setbeamercolor*{title}{bg=white,fg=black}
+\setbeamercolor*{author}{bg=white,fg=black}
+\setbeamercolor*{institute}{bg=white,fg=black}
+
+\setbeamercolor{separation line}{bg=purduegold}
+%\setbeamercolor*{fine separation line}{bg=waterloopurple}
+
+\mode
+<all>

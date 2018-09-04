@@ -1,0 +1,77 @@
+\ProvidesPackage{beamerthemeWaterloo}
+\selectcolormodel{rgb}
+\mode<presentation>
+
+% custom colors
+% http://www.colorsontheweb.com/colorwizard.asp#wizard, used start set: #535967
+% 535967 (mittel)
+% 0e0f12 (schwarz)
+% a0a5b2 (hell)
+% 5d5d5d (gray)
+% cd995d (orange, hell)
+% F79C32 (orange, mittel)
+% FF7e00 (orange, stark)
+% FFBD00 (orange, gelblich)
+
+\usecolortheme{waterloo}
+\usefonttheme{serif}
+\setbeamercolor*{titlelike}{parent=structure}
+\setbeamercovered{invisible}
+
+\useinnertheme{circles}
+
+\setbeamerfont{title}{size=\Large,series=\bfseries,parent=structure}
+\setbeamerfont{subtitle}{size=\scriptsize,series=\bfseries,parent=structure}
+\setbeamerfont{author}{size=\normalsize,series=\itshape,parent=structure}
+\setbeamerfont{institute}{size=\normalsize,series=\itshape}
+%\setbeamerfont{date}{size=\scriptsize,series=\bfseries,parent=structure}
+
+\setbeamertemplate{frametitle}
+{
+%\leavevmode
+  \vskip-1pt
+  \begin{beamercolorbox}[wd=\paperwidth,ht=30pt]{frametitle}%
+  \raisebox{+5pt}{\hskip+9pt \Large\insertframetitle}
+  \hfill
+  \includegraphics[height=24pt]{identity/universityofwaterloo_white.pdf}
+  \vskip2pt
+  \end{beamercolorbox}%
+  \vskip-17pt
+\begin{beamercolorbox}[wd=\paperwidth,ht=2pt]{separation line}
+\end{beamercolorbox}
+}
+
+\setbeamerfont{structure}{series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\raise0.5pt\hbox{\donotcoloroutermaths$\bullet$}}
+\setbeamertemplate{itemize subitem}{\tiny\raise1.0pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+% \usepackage[font={it,small}]{caption}
+
+\setbeamersize{text margin left=10pt,text margin right=10pt}
+\setbeamerfont{block title}{size=\Large}
+
+\setbeamertemplate{background}{%
+\parbox[l][\paperheight]{\paperwidth}{%
+}
+}
+
+\setbeamertemplate{footline}
+{
+  \leavevmode
+%  \hbox{%
+ \hspace*{0.1em}
+  \begin{beamercolorbox}[wd=.89\paperwidth,ht=2.25ex,dp=1ex,center]{palette quaternary}
+  \insertshorttitle
+  \end{beamercolorbox} %\hspace*{-1em}
+  \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{palette quaternary}
+     \insertframenumber{} / \inserttotalframenumber
+  \end{beamercolorbox}
+%  }
+  \vskip0pt%
+}
+%\makeatletter
+%\setbeamertemplate{navigation symbols}{}
+
+\mode
+<all>
